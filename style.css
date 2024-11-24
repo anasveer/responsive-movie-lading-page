@@ -173,3 +173,74 @@ header {
 .banner .content .button a:hover {
     background-color: #ff3700;
 }
+.banner .carousel-box {
+    position: relative;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.carousel {
+    position: relative;
+    height: 400px;
+    perspective: 1500px;
+}
+.carousel .carousel-item {
+    width: 250px;
+    cursor: pointer;
+}
+.carousel .carousel-item img {
+    max-width: 235px;
+    border-radius: 10px;
+    transform: translateX(8px) translateY(-100px);
+    object-fit: cover;
+    object-position: center;
+}
+.play {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3;
+}
+.play i {
+    margin-right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.play:hover {
+    color: var(--primary);
+}
+.sci {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.sci a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sci a:hover {
+    color: var(--primary);
+}
